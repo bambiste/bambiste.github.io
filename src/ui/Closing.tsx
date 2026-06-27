@@ -13,7 +13,8 @@ export default function Closing() {
         <div class="about-body" data-reveal>
           <p>{() => t(COPY.about1)}</p>
           <p>{() => t(COPY.about2)}</p>
-          <p class="about-coda">{() => t(COPY.about3)}</p>
+          <p>{() => t(COPY.about3)}</p>
+          <p class="about-coda">{() => t(COPY.about4)}</p>
         </div>
       </section>
 

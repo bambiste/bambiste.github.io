@@ -7,7 +7,7 @@ export default function Hero() {
     <section class="hero" id="top">
       <div class="hero-copy">
         <div class="eyebrow">
-          <span class="eyebrow-prompt">~</span> {() => t(COPY.heroEyebrow)}
+          <span class="eyebrow-prompt">✦</span> {() => t(COPY.heroEyebrow)}
         </div>
         <h1 class="hero-title">
           {() => t(COPY.heroTitleA)} <span class="grad">{() => t(COPY.heroTitleB)}</span>
@@ -21,6 +21,9 @@ export default function Hero() {
             {() => t(COPY.ctaContact)}
           </a>
         </div>
+        <p class="hero-now">
+          <i class="now-dot" /> {() => t(COPY.heroNow)}
+        </p>
       </div>
 
       <div class="hero-instrument" data-reveal>

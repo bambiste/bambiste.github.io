@@ -33,8 +33,40 @@ export default function Work() {
         ))}
       </div>
 
+      {PROJECTS.filter((p) => p.featured).map((p) => (
+        <article
+          class={() => 'work-card featured a-' + p.accent + (dim(p.tags) ? ' is-dim' : '')}
+          data-reveal
+        >
+          <div class="work-top">
+            <span class="work-glyph">{p.name.charAt(0)}</span>
+            <div class="work-meta">
+              {p.role ? <span class="work-role">{() => t(p.role!)}</span> : null}
+              <h3 class="work-name big">{p.name}</h3>
+              <span class="work-kind">{() => t(p.kind)}</span>
+            </div>
+            <span class="work-year">{p.year}</span>
+          </div>
+          <p class="work-blurb big">{() => t(p.blurb)}</p>
+          <div class="work-foot row">
+            <div class="work-tags">
+              {p.tags.map((tag) => (
+                <span class={() => 'tag' + (active() === tag ? ' hit' : '')}>{tag}</span>
+              ))}
+            </div>
+            <div class="work-links">
+              {p.links.map((l) => (
+                <a class="work-link" href={l.href} target="_blank" rel="noreferrer">
+                  {l.label} <span class="arr">↗</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </article>
+      ))}
+
       <div class="work-grid">
-        {PROJECTS.map((p) => (
+        {PROJECTS.filter((p) => !p.featured).map((p) => (
           <article class={() => 'work-card a-' + p.accent + (dim(p.tags) ? ' is-dim' : '')} data-reveal>
             <div class="work-top">
               <span class="work-glyph">{p.name.charAt(0)}</span>

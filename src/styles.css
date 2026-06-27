@@ -808,6 +808,75 @@ main {
   white-space: nowrap;
 }
 
+/* featured (flagship) card */
+.work-card.featured {
+  margin-bottom: 18px;
+  padding: clamp(26px, 4vw, 44px);
+  background:
+    radial-gradient(700px 320px at 88% -10%, rgba(125, 249, 192, 0.1), transparent 70%),
+    var(--panel);
+}
+.work-card.featured::before {
+  height: 3px;
+  opacity: 1;
+  background: linear-gradient(90deg, var(--phos), var(--cyan) 45%, var(--violet));
+}
+.work-card.featured .work-glyph {
+  width: 54px;
+  height: 54px;
+  font-size: 26px;
+  color: #052017;
+  background: linear-gradient(160deg, var(--phos), var(--cyan));
+  border: 0;
+}
+.work-role {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--phos);
+  background: rgba(125, 249, 192, 0.1);
+  border: 1px solid rgba(125, 249, 192, 0.28);
+  border-radius: 6px;
+  padding: 2px 9px;
+  margin-bottom: 8px;
+}
+.work-name.big {
+  font-size: clamp(24px, 3vw, 32px);
+}
+.work-blurb.big {
+  font-size: clamp(15px, 1.6vw, 17px);
+  max-width: 72ch;
+}
+.work-foot.row {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* hero "now" line */
+.hero-now {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 22px 0 0;
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--muted);
+  max-width: 52ch;
+}
+.now-dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--amber);
+  box-shadow: 0 0 8px rgba(255, 207, 107, 0.7);
+}
+
 /* ---- scroll reveal (only when JS can reveal it again) -------------------- */
 .js [data-reveal] {
   opacity: 0;

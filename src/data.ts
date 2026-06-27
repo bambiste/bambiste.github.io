@@ -21,14 +21,18 @@ export const COPY = {
   },
 
   heroEyebrow: {
-    en: 'framework & systems engineer',
-    fr: 'ingénieur systèmes & frameworks',
+    en: 'Co-founder & CTO · Adafri · since 2020',
+    fr: 'Co-fondateur & CTO · Adafri · depuis 2020',
   } as L,
-  heroTitleA: { en: 'I build reactive systems', fr: 'Je construis des systèmes réactifs' } as L,
-  heroTitleB: { en: 'from the signal up.', fr: 'du signal jusqu’au pixel.' } as L,
+  heroNow: {
+    en: 'Currently building Adafri — an AI-powered, omnichannel marketing platform for African markets.',
+    fr: 'Je construis Adafri — une plateforme marketing omnicanale, dopée à l’IA, pour les marchés africains.',
+  } as L,
+  heroTitleA: { en: 'I build platforms —', fr: 'Je construis des plateformes —' } as L,
+  heroTitleB: { en: 'down to the foundations.', fr: 'jusqu’aux fondations.' } as L,
   heroLede: {
-    en: 'Frameworks, compilers, and the full-stack products that run on them — all designed around fine-grained reactivity. This page is one of them: it runs on Fluixi, my own signals-based framework, prerendered to static HTML and hydrated into the live instrument on the right.',
-    fr: 'Des frameworks, des compilateurs et les produits full-stack qui tournent dessus — tous pensés autour d’une réactivité fine. Cette page en fait partie : elle tourne sur Fluixi, mon propre framework à signaux, prérendue en HTML statique puis hydratée dans l’instrument vivant ci-contre.',
+    en: 'Full-stack & ML engineer, and co-founder/CTO of Adafri — an omnichannel marketing platform built with Angular and Python. On the side I build Fluixi, my own fine-grained reactive framework: this very page runs on it, prerendered to static HTML and hydrated into the live instrument on the right.',
+    fr: 'Ingénieur full-stack & ML, co-fondateur et CTO d’Adafri — une plateforme marketing omnicanale construite avec Angular et Python. En parallèle je développe Fluixi, mon propre framework réactif à granularité fine : cette page tourne dessus, prérendue en HTML statique puis hydratée dans l’instrument vivant ci-contre.',
   } as L,
   ctaWork: { en: 'See selected work', fr: 'Voir les projets' } as L,
   ctaContact: { en: 'Get in touch', fr: 'Me contacter' } as L,
@@ -49,16 +53,20 @@ export const COPY = {
 
   secAbout: { en: 'About', fr: 'À propos' } as L,
   about1: {
-    en: 'I’m a software engineer focused on the runtime layer of the web — how state flows, when the DOM updates, and how it feels to build against. My work usually starts from one conviction: fine-grained reactivity is the right default.',
-    fr: 'Je suis ingénieur logiciel, concentré sur la couche d’exécution du web — comment l’état circule, quand le DOM se met à jour, et ce que l’on ressent en construisant dessus. Mon travail part presque toujours d’une conviction : la réactivité fine est le bon réglage par défaut.',
+    en: 'Since 2020 I’ve been co-founder and CTO of Adafri — an omnichannel marketing platform for African markets (Google Ads, SMS, DOOH billboards, Mobile Money). It’s an Angular front end on a Python/Flask backend over Cloud Firestore, with Google Cloud Vision handling prohibited-content, text and color detection, and deep Google Ads API integration.',
+    fr: 'Depuis 2020, je suis co-fondateur et CTO d’Adafri — une plateforme marketing omnicanale pour les marchés africains (Google Ads, SMS, panneaux DOOH, Mobile Money). Un front Angular sur un backend Python/Flask et Cloud Firestore, avec Google Cloud Vision pour la détection de contenus interdits, de texte et de couleurs, et une intégration poussée de l’API Google Ads.',
   } as L,
   about2: {
-    en: 'I built Fluixi to prove that end to end — a TC39-signals core, a JSX compiler, and a full-stack framework with SSR, streaming, SSG, routing and server functions — and I use it to ship real products, from commerce platforms to the tools around them.',
-    fr: 'J’ai construit Fluixi pour le démontrer de bout en bout — un cœur à signaux TC39, un compilateur JSX et un framework full-stack avec SSR, streaming, SSG, routage et fonctions serveur — et je m’en sers pour livrer de vrais produits, des plateformes e-commerce aux outils qui les entourent.',
+    en: 'I’ve written Python and Angular since 2018 — my third year of a bachelor’s degree — and I pick up tools by shipping with them: Flutter and React since 2021. I learn a framework by building something real in it.',
+    fr: 'J’écris du Python et de l’Angular depuis 2018 — ma troisième année de licence — et j’apprends les outils en livrant avec : Flutter et React depuis 2021. J’apprends un framework en construisant quelque chose de réel avec.',
   } as L,
   about3: {
-    en: 'I care about small dependency surfaces, honest abstractions, and software that does exactly what it says.',
-    fr: 'J’aime les surfaces de dépendances réduites, les abstractions honnêtes, et les logiciels qui font exactement ce qu’ils annoncent.',
+    en: 'That habit led me to build Fluixi — my own fine-grained reactive framework, with a TC39-signals core, a JSX compiler and full-stack rendering. It’s where I explore framework design from first principles; this page runs on it.',
+    fr: 'Cette habitude m’a mené à construire Fluixi — mon propre framework réactif à granularité fine, avec un cœur à signaux TC39, un compilateur JSX et un rendu full-stack. C’est là que j’explore la conception de frameworks à partir des principes ; cette page tourne dessus.',
+  } as L,
+  about4: {
+    en: 'I think long-term and build foundations, not just features — small dependency surfaces, honest abstractions, and software that does exactly what it says.',
+    fr: 'Je pense à long terme et je construis des fondations, pas seulement des fonctionnalités — des surfaces de dépendances réduites, des abstractions honnêtes, et des logiciels qui font exactement ce qu’ils annoncent.',
   } as L,
 
   secContact: { en: 'Contact', fr: 'Contact' } as L,
@@ -86,9 +94,26 @@ export type Project = {
   tags: string[];
   blurb: L;
   links: { label: string; href: string }[];
+  featured?: boolean;
+  role?: L;
 };
 
 export const PROJECTS: Project[] = [
+  {
+    id: 'adafri',
+    name: 'Adafri',
+    kind: { en: 'Marketing & advertising platform', fr: 'Plateforme marketing & publicité' },
+    role: { en: 'Co-founder & CTO · since 2020', fr: 'Co-fondateur & CTO · depuis 2020' },
+    year: '2020 —',
+    accent: 'phos',
+    featured: true,
+    tags: ['Angular', 'Python · Flask', 'Firestore', 'Cloud Vision', 'Google Ads'],
+    blurb: {
+      en: 'The platform I lead as co-founder and CTO. Adafri lets businesses create, manage and automate advertising across channels — Google Ads, SMS, DOOH billboards and Mobile Money payments — for African markets. An Angular front end on a Python/Flask backend over Cloud Firestore, with Google Cloud Vision for prohibited-content, text and color detection, and deep Google Ads API integration. Now growing into an AI-powered marketing suite with built-in business tools.',
+      fr: 'La plateforme que je dirige en tant que co-fondateur et CTO. Adafri permet aux entreprises de créer, gérer et automatiser leur publicité sur tous les canaux — Google Ads, SMS, panneaux DOOH et paiements Mobile Money — pour les marchés africains. Un front Angular sur un backend Python/Flask et Cloud Firestore, avec Google Cloud Vision pour la détection de contenus interdits, de texte et de couleurs, et une intégration poussée de l’API Google Ads. En route vers une suite marketing dopée à l’IA, avec des outils métier intégrés.',
+    },
+    links: [{ label: 'adafri.com', href: 'https://adafri.com' }],
+  },
   {
     id: 'fluixi',
     name: 'Fluixi',
@@ -153,27 +178,27 @@ export type StackGroup = { id: string; label: L; glyph: string; items: string[] 
 
 export const STACK: StackGroup[] = [
   {
-    id: 'reactivity',
+    id: 'languages',
     glyph: '◆',
-    label: { en: 'Reactivity & compilers', fr: 'Réactivité & compilateurs' },
-    items: ['TC39 Signals', 'Fine-grained rendering', 'JSX → DOM codegen', 'Hydration', 'Babel'],
+    label: { en: 'Languages & frameworks', fr: 'Langages & frameworks' },
+    items: ['Python', 'TypeScript', 'Angular', 'React', 'Flutter'],
   },
   {
-    id: 'fullstack',
+    id: 'backend',
     glyph: 'ƒ',
-    label: { en: 'Full-stack web', fr: 'Web full-stack' },
-    items: ['SSR · SSG · streaming', 'File routing', 'Server functions', 'Edge runtimes', 'DI'],
+    label: { en: 'Backend & cloud', fr: 'Backend & cloud' },
+    items: ['Python · Flask', 'Cloud Firestore', 'Google Cloud Vision', 'Google Ads API', 'REST APIs'],
   },
   {
-    id: 'products',
+    id: 'reactivity',
     glyph: '▤',
-    label: { en: 'Products & commerce', fr: 'Produits & e-commerce' },
-    items: ['Medusa', 'Storefronts', 'Admin dashboards', 'i18n', 'Design systems'],
+    label: { en: 'Reactivity & frameworks', fr: 'Réactivité & frameworks' },
+    items: ['TC39 Signals', 'JSX → DOM compiler', 'SSR · SSG', 'Fine-grained rendering', 'Hydration'],
   },
   {
     id: 'foundations',
     glyph: '⟂',
-    label: { en: 'Foundations', fr: 'Fondations' },
-    items: ['TypeScript', 'Monorepos · pnpm/nx', 'Changesets · CI', 'Vitest', 'Vite'],
+    label: { en: 'Craft & foundations', fr: 'Méthode & fondations' },
+    items: ['Monorepos · pnpm/nx', 'CI · changesets', 'Vitest', 'GDPR · privacy', 'Design systems'],
   },
 ];
