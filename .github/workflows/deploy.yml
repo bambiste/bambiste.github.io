@@ -39,7 +39,12 @@ jobs:
           cache: pnpm
 
       - name: Install
-        run: pnpm install --frozen-lockfile
+        # pnpm v10 ignores the ${NODE_AUTH_TOKEN} placeholder in the committed project .npmrc
+        # (it won't expand env vars in repo-committed credentials). Set it in user-level config,
+        # which pnpm trusts — this is the fix pnpm's own warning points to.
+        run: |
+          pnpm config set "//npm.pkg.github.com/:_authToken" "${NODE_AUTH_TOKEN}"
+          pnpm install --frozen-lockfile
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
 
