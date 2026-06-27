@@ -35,7 +35,8 @@ export default function Work() {
 
       {PROJECTS.filter((p) => p.featured).map((p) => (
         <article
-          class={() => 'work-card featured a-' + p.accent + (dim(p.tags) ? ' is-dim' : '')}
+          class={'work-card featured a-' + p.accent}
+          data-dim={() => (dim(p.tags) ? '1' : '')}
           data-reveal
         >
           <div class="work-top">
@@ -67,7 +68,7 @@ export default function Work() {
 
       <div class="work-grid">
         {PROJECTS.filter((p) => !p.featured).map((p) => (
-          <article class={() => 'work-card a-' + p.accent + (dim(p.tags) ? ' is-dim' : '')} data-reveal>
+          <article class={'work-card a-' + p.accent} data-dim={() => (dim(p.tags) ? '1' : '')} data-reveal>
             <div class="work-top">
               <span class="work-glyph">{p.name.charAt(0)}</span>
               <div class="work-meta">

@@ -577,9 +577,10 @@ main {
   border-color: color-mix(in srgb, var(--accent) 45%, transparent);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
 }
-.work-card.is-dim {
-  opacity: 0.32;
-  filter: saturate(0.6);
+/* dim is driven by a reactive data attribute (not the class string) so it can't clobber the
+   scroll-reveal `.in` class; `filter: opacity()` composes with the reveal's `opacity` property. */
+.work-card[data-dim='1'] {
+  filter: opacity(0.3) saturate(0.55);
 }
 .work-top {
   display: flex;

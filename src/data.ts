@@ -31,8 +31,8 @@ export const COPY = {
   heroTitleA: { en: 'I build platforms —', fr: 'Je construis des plateformes —' } as L,
   heroTitleB: { en: 'down to the foundations.', fr: 'jusqu’aux fondations.' } as L,
   heroLede: {
-    en: 'Full-stack & ML engineer, and co-founder/CTO of Adafri — an omnichannel marketing platform built with Angular and Python. On the side I build Fluixi, my own fine-grained reactive framework: this very page runs on it, prerendered to static HTML and hydrated into the live instrument on the right.',
-    fr: 'Ingénieur full-stack & ML, co-fondateur et CTO d’Adafri — une plateforme marketing omnicanale construite avec Angular et Python. En parallèle je développe Fluixi, mon propre framework réactif à granularité fine : cette page tourne dessus, prérendue en HTML statique puis hydratée dans l’instrument vivant ci-contre.',
+    en: 'Full-stack engineer and co-founder/CTO of Adafri — an omnichannel marketing platform built with Angular and Python. On the side I build Fluixi, my own fine-grained reactive framework: this very page runs on it, prerendered to static HTML and hydrated into the live instrument on the right.',
+    fr: 'Ingénieur full-stack, co-fondateur et CTO d’Adafri — une plateforme marketing omnicanale construite avec Angular et Python. En parallèle je développe Fluixi, mon propre framework réactif à granularité fine : cette page tourne dessus, prérendue en HTML statique puis hydratée dans l’instrument vivant ci-contre.',
   } as L,
   ctaWork: { en: 'See selected work', fr: 'Voir les projets' } as L,
   ctaContact: { en: 'Get in touch', fr: 'Me contacter' } as L,
