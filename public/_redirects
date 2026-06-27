@@ -1,0 +1,3 @@
+# Single-page site: serve the prerendered index for any unmatched path (static files and /assets
+# are still served directly first). Avoids 404s on deep links.
+/*    /index.html    200
