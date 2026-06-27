@@ -1,0 +1,5 @@
+node_modules
+dist
+.fluixi
+*.log
+.DS_Store
