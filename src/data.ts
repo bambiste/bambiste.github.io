@@ -112,7 +112,7 @@ export const PROJECTS: Project[] = [
       en: 'The platform I lead as co-founder and CTO. Adafri lets businesses create, manage and automate advertising across channels — Google Ads, SMS, DOOH billboards and Mobile Money payments — for African markets. An Angular front end on a Python/Flask backend over Cloud Firestore, with Google Cloud Vision for prohibited-content, text and color detection, and deep Google Ads API integration. Now growing into an AI-powered marketing suite with built-in business tools.',
       fr: 'La plateforme que je dirige en tant que co-fondateur et CTO. Adafri permet aux entreprises de créer, gérer et automatiser leur publicité sur tous les canaux — Google Ads, SMS, panneaux DOOH et paiements Mobile Money — pour les marchés africains. Un front Angular sur un backend Python/Flask et Cloud Firestore, avec Google Cloud Vision pour la détection de contenus interdits, de texte et de couleurs, et une intégration poussée de l’API Google Ads. En route vers une suite marketing dopée à l’IA, avec des outils métier intégrés.',
     },
-    links: [{ label: 'adafri.com', href: 'https://adafri.com' }],
+    links: [{ label: 'adafri.co', href: 'https://adafri.co' }],
   },
   {
     id: 'fluixi',
