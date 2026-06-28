@@ -5,8 +5,8 @@ import './styles.css';
 import { startClient } from '@fluixi/core/client';
 import App from './app.js';
 
-// NB: no `hydrate: true`. On the published alpha, true hydration over this Router/Suspense/Outlet
-// structure duplicates the whole app (renders it ~3×) instead of reusing the server DOM, so we
-// stay on the render() path (clears #root + rebuilds). Trade-off: a brief first-paint re-render
-// flash, but correct output. Revisit once @fluixi/dom hydration handles nested Router/Suspense.
-startClient(App, { root: '#root' });
+// hydrate:false forces the render() path (clear #root + rebuild). alpha.34 auto-hydrates a
+// non-empty root, but DOM-reuse hydration still duplicates this lazy-route/Suspense app, so we
+// opt out: a brief first-paint re-render flash, but correct output. SSR SEO (seo() → <head>) is
+// unaffected. Drop this once async lazy-route hydration is fixed and re-released.
+startClient(App, { root: '#root', hydrate: false });

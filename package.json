@@ -9,13 +9,14 @@
     "preview": "vite preview --outDir dist/client"
   },
   "dependencies": {
-    "@fluixi/cli": "0.1.0-alpha.24",
-    "@fluixi/core": "1.0.0-alpha.33",
-    "@fluixi/dom": "1.0.0-alpha.33",
-    "@fluixi/jsx": "1.0.0-alpha.33",
-    "@fluixi/reactive": "1.0.0-alpha.33",
-    "@fluixi/server": "1.0.0-alpha.33",
-    "@fluixi/start": "0.1.0-alpha.23"
+    "@fluixi/cli": "0.1.0-alpha.25",
+    "@fluixi/core": "1.0.0-alpha.34",
+    "@fluixi/dom": "1.0.0-alpha.34",
+    "@fluixi/jsx": "1.0.0-alpha.34",
+    "@fluixi/reactive": "1.0.0-alpha.34",
+    "@fluixi/server": "1.0.0-alpha.34",
+    "@fluixi/start": "0.1.0-alpha.24",
+    "@fluixi/head": "0.1.0-alpha.1"
   },
   "devDependencies": {
     "typescript": "^5.4.0",

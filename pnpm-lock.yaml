@@ -9,26 +9,29 @@ importers:
   .:
     dependencies:
       '@fluixi/cli':
-        specifier: 0.1.0-alpha.24
-        version: 0.1.0-alpha.24(@fluixi/reactive@1.0.0-alpha.33)(rollup@4.62.2)(vite@5.4.21)
+        specifier: 0.1.0-alpha.25
+        version: 0.1.0-alpha.25(@fluixi/reactive@1.0.0-alpha.34)(rollup@4.62.2)(vite@5.4.21)
       '@fluixi/core':
-        specifier: 1.0.0-alpha.33
-        version: 1.0.0-alpha.33(rollup@4.62.2)(vite@5.4.21)
+        specifier: 1.0.0-alpha.34
+        version: 1.0.0-alpha.34(rollup@4.62.2)(vite@5.4.21)
       '@fluixi/dom':
-        specifier: 1.0.0-alpha.33
-        version: 1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33)
+        specifier: 1.0.0-alpha.34
+        version: 1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34)
+      '@fluixi/head':
+        specifier: 0.1.0-alpha.1
+        version: 0.1.0-alpha.1
       '@fluixi/jsx':
-        specifier: 1.0.0-alpha.33
-        version: 1.0.0-alpha.33(@fluixi/dom@1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33))(@fluixi/reactive@1.0.0-alpha.33)
+        specifier: 1.0.0-alpha.34
+        version: 1.0.0-alpha.34(@fluixi/dom@1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34))(@fluixi/reactive@1.0.0-alpha.34)
       '@fluixi/reactive':
-        specifier: 1.0.0-alpha.33
-        version: 1.0.0-alpha.33
+        specifier: 1.0.0-alpha.34
+        version: 1.0.0-alpha.34
       '@fluixi/server':
-        specifier: 1.0.0-alpha.33
-        version: 1.0.0-alpha.33(@fluixi/dom@1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33))(@fluixi/reactive@1.0.0-alpha.33)
+        specifier: 1.0.0-alpha.34
+        version: 1.0.0-alpha.34(@fluixi/dom@1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34))(@fluixi/reactive@1.0.0-alpha.34)
       '@fluixi/start':
-        specifier: 0.1.0-alpha.23
-        version: 0.1.0-alpha.23(@fluixi/reactive@1.0.0-alpha.33)(rollup@4.62.2)(vite@5.4.21)
+        specifier: 0.1.0-alpha.24
+        version: 0.1.0-alpha.24(@fluixi/reactive@1.0.0-alpha.34)(rollup@4.62.2)(vite@5.4.21)
     devDependencies:
       typescript:
         specifier: ^5.4.0
@@ -462,56 +465,59 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fluixi/cli@0.1.0-alpha.24':
-    resolution: {integrity: sha512-y24TeIR5UrIC63fz6AAuEyUgkplQry3baQ6x06UX8lD0R/Pn2CDuEjcupgWR4nm3e1L3/B8U2PWY5AsgTIPNvg==, tarball: https://npm.pkg.github.com/download/@fluixi/cli/0.1.0-alpha.24/755da6bdf79a1e2d42ce383feb9e1fbbe16052d9}
+  '@fluixi/cli@0.1.0-alpha.25':
+    resolution: {integrity: sha512-irIgyxsxqFJS/at1jvRDixN/+YBPURXKXwRWsxqyLU6FMOOA+HjfJbXQ4hxk3rfCznR7CpVw1cj1pBJeij0dhg==, tarball: https://npm.pkg.github.com/download/@fluixi/cli/0.1.0-alpha.25/843f150bc4c5390ee2391c818940e5531a6a41f5}
     hasBin: true
 
-  '@fluixi/compiler@1.0.0-alpha.33':
-    resolution: {integrity: sha512-K4qOB369g+wPgHzKBRNN7OHu79dwEkin7zv3kRwgFo+gky/ddKqU4onWDqJZ2ZNObeg48FWvoKtUIM1/U7UkCw==, tarball: https://npm.pkg.github.com/download/@fluixi/compiler/1.0.0-alpha.33/e0b8ec3777bbba2408afeaa4a56562aa3b4d1242}
+  '@fluixi/compiler@1.0.0-alpha.34':
+    resolution: {integrity: sha512-oLTo45BcPqaFAI9nvfRV8Jb616WBILHkkz1ZrUoNELxHGlfSDxKiUUqjXQKmxJji/IHVelXEinLTNTgWsKDPVw==, tarball: https://npm.pkg.github.com/download/@fluixi/compiler/1.0.0-alpha.34/49ddb194b02f665cf748863d77715200e37a42f5}
 
-  '@fluixi/core@1.0.0-alpha.33':
-    resolution: {integrity: sha512-pmZXGfcLvzaow1iwtuppaI/uXrSUK3QRd4a1kbSs7NN9AsBfDO/tb3c/6jO/enstkgBxUDwJsC+NPrOKGTbzAQ==, tarball: https://npm.pkg.github.com/download/@fluixi/core/1.0.0-alpha.33/32a3a0cd6cd575609ef2ad92684b873c763759c0}
+  '@fluixi/core@1.0.0-alpha.34':
+    resolution: {integrity: sha512-hRu3rPcIIR/Ofw3beHD4edyrF0x68zgeT4X6QPPAJnABMWUn2mYdf1eTdNrcB01BK4HyMKPszUTSI6DhjuVaGg==, tarball: https://npm.pkg.github.com/download/@fluixi/core/1.0.0-alpha.34/fc2aff5a0835300f383d904b49b6108ed5b24a4f}
     hasBin: true
 
-  '@fluixi/dom@1.0.0-alpha.33':
-    resolution: {integrity: sha512-dlMVjYsxGJxKFXh52jZXJ+e+5BGsI5eueIJoiZ0jZy/pxefET6yqBovTYHwKu0IVL5ljIvahzGXO17liN8uR+Q==, tarball: https://npm.pkg.github.com/download/@fluixi/dom/1.0.0-alpha.33/131eb5be4c4109121bff316c4e8cea700dbf4b12}
+  '@fluixi/dom@1.0.0-alpha.34':
+    resolution: {integrity: sha512-2CYU6RYhJY9NowPF+OuA7v/znbVKtj+bFXF2rHP2YKiQX78O4gNhZTF6f6Q+2nhdE2y2nsSDGlJB/1diYvVMCA==, tarball: https://npm.pkg.github.com/download/@fluixi/dom/1.0.0-alpha.34/3b618cf323d76bac81dd6a7bc7c9748144d5bdcd}
     peerDependencies:
-      '@fluixi/reactive': 1.0.0-alpha.33
+      '@fluixi/reactive': 1.0.0-alpha.34
 
-  '@fluixi/jsx@1.0.0-alpha.33':
-    resolution: {integrity: sha512-wyBW4amVvWfRjubC3dhQrlyBH8HR+xwlRkTwoqTOrZUD1IEP9tbq1HSW3a0MlxNMH6SvMjIRtorltgPgz1bU7w==, tarball: https://npm.pkg.github.com/download/@fluixi/jsx/1.0.0-alpha.33/988262307a77a529aebdaf4f60da1d099885eef2}
+  '@fluixi/head@0.1.0-alpha.1':
+    resolution: {integrity: sha512-94JUJd3LGRebVeoAySRWa8dXkzgCaXUNar8I9SO8Ru2NniG9936ywBbFGugfABMpZr7s39VdSi41BB6Gnh3jQw==, tarball: https://npm.pkg.github.com/download/@fluixi/head/0.1.0-alpha.1/7110ff382b38a3fac7e6bd423154044e3b777007}
+
+  '@fluixi/jsx@1.0.0-alpha.34':
+    resolution: {integrity: sha512-UIhRcNqr4/JzRQLX+rpSCozU6RkLfiLNZvKmkGHmcbaL21hIDmF10Uoi0nzDIvg5b6VgDEVg7Vg7Lqs7kLSNWA==, tarball: https://npm.pkg.github.com/download/@fluixi/jsx/1.0.0-alpha.34/3ad5e474bdd3190fbdcf3bed66c6a347923504fe}
     peerDependencies:
-      '@fluixi/dom': 1.0.0-alpha.33
-      '@fluixi/reactive': 1.0.0-alpha.33
+      '@fluixi/dom': 1.0.0-alpha.34
+      '@fluixi/reactive': 1.0.0-alpha.34
 
-  '@fluixi/lit@1.0.0-alpha.33':
-    resolution: {integrity: sha512-QFxmnqSUvIoeMgCLqEAe7oCA4tKYpbrnmnTkEfNRgsToZnpSgAmUbpmxcRbNb0vEvvFhEm3geLW1E9pOfTm7Fg==, tarball: https://npm.pkg.github.com/download/@fluixi/lit/1.0.0-alpha.33/fc734f8a9604ea6a0918e62fc091a0dd12143037}
+  '@fluixi/lit@1.0.0-alpha.34':
+    resolution: {integrity: sha512-sK8bJWCn0G/7aLwY8Q82BXAV+Tu1OCgvp/bOYDhdEKyM3mB1adpyIjdjP3JZxDKeMp1993wQGKf2VzwnJay/UQ==, tarball: https://npm.pkg.github.com/download/@fluixi/lit/1.0.0-alpha.34/bd99f235ac373e3a05afdaac2efcf7b0f510d007}
     peerDependencies:
-      '@fluixi/dom': 1.0.0-alpha.33
-      '@fluixi/reactive': 1.0.0-alpha.33
+      '@fluixi/dom': 1.0.0-alpha.34
+      '@fluixi/reactive': 1.0.0-alpha.34
 
-  '@fluixi/reactive@1.0.0-alpha.33':
-    resolution: {integrity: sha512-Qlo2QfXQhgQfS5vXO9N08ykw5yh/wCuk09cfcW3ICuctlyV/SF4JAcG7/zz7TvOPqUOYzG+s+zz7JHeVCb26tw==, tarball: https://npm.pkg.github.com/download/@fluixi/reactive/1.0.0-alpha.33/bb9723404e298e555dcb53b31bda974c8bf51f83}
+  '@fluixi/reactive@1.0.0-alpha.34':
+    resolution: {integrity: sha512-+FlOIrdI0Q1jW98CKfuEA96uI00UCAUmH0LV9RMQA17Pr4Sqg2+cz6G7EvuZajWPzJ1MANpVUDrYNYWwRUb+HA==, tarball: https://npm.pkg.github.com/download/@fluixi/reactive/1.0.0-alpha.34/bed069ff1ab510f011ccfd83f4976f1e0c600d6c}
 
-  '@fluixi/router@0.1.1':
-    resolution: {integrity: sha512-jH494QJrXFazSnGHtJ4ymbu6FTYzgXUAQSVE3rvbvUz3Qd7CujopHL9BrNxIrWryEoeKpCGOLp6wiHtzAoOk7g==, tarball: https://npm.pkg.github.com/download/@fluixi/router/0.1.1/7e107a0e533ed05b9a16ada0f1105ea68a265258}
+  '@fluixi/router@0.1.2-alpha.0':
+    resolution: {integrity: sha512-Diu2itxEEQqDRxCjDRzdlE6nBL6FvNTtkS2JemESF4AVlXGmlsdKmt4mM55iW//0UJMk13JmSx1nhttv6fjSuQ==, tarball: https://npm.pkg.github.com/download/@fluixi/router/0.1.2-alpha.0/d1f5f471fc94820f1b5b84375218a55d6e5b20cd}
 
-  '@fluixi/server@1.0.0-alpha.33':
-    resolution: {integrity: sha512-07k9E6Kjdr9QKV3F7DXrEkOpMrmAyBzLVeANIgzZI5Kw8ptI5lvET+e0m2kGlQGZlD+qdFqQITY9myzkuoCvzw==, tarball: https://npm.pkg.github.com/download/@fluixi/server/1.0.0-alpha.33/0cb01e4c2dd66d0d0c295b717d58c29d1204c1b7}
+  '@fluixi/server@1.0.0-alpha.34':
+    resolution: {integrity: sha512-f3rA3m04Mzxtk4hTb7lWswLKRQaqsjD1UHyHpcbGqCciGeV72gpWiT0lhUktNj1Eomb9HhgKCsRFFKzbFfnhmQ==, tarball: https://npm.pkg.github.com/download/@fluixi/server/1.0.0-alpha.34/642d83c016dbdb1a2ada74862955b0116cf8bd55}
     peerDependencies:
-      '@fluixi/dom': 1.0.0-alpha.33
-      '@fluixi/reactive': 1.0.0-alpha.33
+      '@fluixi/dom': 1.0.0-alpha.34
+      '@fluixi/reactive': 1.0.0-alpha.34
 
-  '@fluixi/start@0.1.0-alpha.23':
-    resolution: {integrity: sha512-xksawFUJebUYkCI7KYZ5GxjFLl3gG4zdEhQn8prrWTc4RFwPVFfGekAe5YIh5SjcVGaurCnPZ3SZhQQoA8HNmw==, tarball: https://npm.pkg.github.com/download/@fluixi/start/0.1.0-alpha.23/795e211265ffede4cd457cf6eaa35943c7a34256}
+  '@fluixi/start@0.1.0-alpha.24':
+    resolution: {integrity: sha512-Fk6khxHgTq/QF/41TX91L9eczjqko1Ry2fX7zB/Bzxc1ozamHV9Erc8Er4fXTMAI3SKGqywRYlJI57eJI/OwKQ==, tarball: https://npm.pkg.github.com/download/@fluixi/start/0.1.0-alpha.24/d1f2e8bccae9f464a0d1f6841b90f6a6f0ac49ef}
     peerDependencies:
       vite: ^5.0.0
 
-  '@fluixi/utils@1.0.0-alpha.33':
-    resolution: {integrity: sha512-SqivlevFv8DyE5Bm6PPa/PFW0aKO6Sn8DLjDCErwxirFql+g6O3kH0pfNzrbXXzy+5Qks2Y+vwK6TF1hdK8AmA==, tarball: https://npm.pkg.github.com/download/@fluixi/utils/1.0.0-alpha.33/68c186293394bb598d0e22794047997ccff706c2}
+  '@fluixi/utils@1.0.0-alpha.34':
+    resolution: {integrity: sha512-7faVbhPdQPVO0lsS4xEpXHVs5r8qclpmNGW9C1bzLSsZGYhYijZZ5G8wAf8VLNc+s0diDZKD4G0bEiY5W7VHrg==, tarball: https://npm.pkg.github.com/download/@fluixi/utils/1.0.0-alpha.34/bbc264fa2030c8163f882daaf72d7e57e9cd058f}
 
-  '@fluixi/vite-plugin@1.0.0-alpha.33':
-    resolution: {integrity: sha512-MVJwYDPn1FHCNGlqsGq5hSjIL85XBT1mLH4r3JEgMdU4aiEzLtU98LeaH2qanZ0x6+Vr+1333fe791BJtUkbxQ==, tarball: https://npm.pkg.github.com/download/@fluixi/vite-plugin/1.0.0-alpha.33/d91b836ed0804f5b19960e503957121fdd1246c7}
+  '@fluixi/vite-plugin@1.0.0-alpha.34':
+    resolution: {integrity: sha512-NKhO4W6GrNJNm4HKSXKAfCbKWFcYzctH60VMKokbYgEJF0jvBkvbYd7H3XoWrxhyPX8dqpJyO7D/jNHjIXkDtw==, tarball: https://npm.pkg.github.com/download/@fluixi/vite-plugin/1.0.0-alpha.34/253190d5a53df25e70859a9ac9da78d074293b36}
     peerDependencies:
       vite: '>=4'
 
@@ -1659,16 +1665,16 @@ snapshots:
   '@esbuild/win32-x64@0.27.7':
     optional: true
 
-  '@fluixi/cli@0.1.0-alpha.24(@fluixi/reactive@1.0.0-alpha.33)(rollup@4.62.2)(vite@5.4.21)':
+  '@fluixi/cli@0.1.0-alpha.25(@fluixi/reactive@1.0.0-alpha.34)(rollup@4.62.2)(vite@5.4.21)':
     dependencies:
-      '@fluixi/start': 0.1.0-alpha.23(@fluixi/reactive@1.0.0-alpha.33)(rollup@4.62.2)(vite@5.4.21)
+      '@fluixi/start': 0.1.0-alpha.24(@fluixi/reactive@1.0.0-alpha.34)(rollup@4.62.2)(vite@5.4.21)
     transitivePeerDependencies:
       - '@fluixi/reactive'
       - rollup
       - supports-color
       - vite
 
-  '@fluixi/compiler@1.0.0-alpha.33':
+  '@fluixi/compiler@1.0.0-alpha.34':
     dependencies:
       '@babel/core': 7.29.7
       '@babel/generator': 7.29.7
@@ -1679,17 +1685,18 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@fluixi/core@1.0.0-alpha.33(rollup@4.62.2)(vite@5.4.21)':
+  '@fluixi/core@1.0.0-alpha.34(rollup@4.62.2)(vite@5.4.21)':
     dependencies:
-      '@fluixi/compiler': 1.0.0-alpha.33
-      '@fluixi/dom': 1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33)
-      '@fluixi/jsx': 1.0.0-alpha.33(@fluixi/dom@1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33))(@fluixi/reactive@1.0.0-alpha.33)
-      '@fluixi/lit': 1.0.0-alpha.33(@fluixi/dom@1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33))(@fluixi/reactive@1.0.0-alpha.33)
-      '@fluixi/reactive': 1.0.0-alpha.33
-      '@fluixi/router': 0.1.1
-      '@fluixi/server': 1.0.0-alpha.33(@fluixi/dom@1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33))(@fluixi/reactive@1.0.0-alpha.33)
-      '@fluixi/utils': 1.0.0-alpha.33
-      '@fluixi/vite-plugin': 1.0.0-alpha.33(vite@5.4.21)
+      '@fluixi/compiler': 1.0.0-alpha.34
+      '@fluixi/dom': 1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34)
+      '@fluixi/head': 0.1.0-alpha.1
+      '@fluixi/jsx': 1.0.0-alpha.34(@fluixi/dom@1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34))(@fluixi/reactive@1.0.0-alpha.34)
+      '@fluixi/lit': 1.0.0-alpha.34(@fluixi/dom@1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34))(@fluixi/reactive@1.0.0-alpha.34)
+      '@fluixi/reactive': 1.0.0-alpha.34
+      '@fluixi/router': 0.1.2-alpha.0
+      '@fluixi/server': 1.0.0-alpha.34(@fluixi/dom@1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34))(@fluixi/reactive@1.0.0-alpha.34)
+      '@fluixi/utils': 1.0.0-alpha.34
+      '@fluixi/vite-plugin': 1.0.0-alpha.34(vite@5.4.21)
       lit: 3.3.3
       lit-html: 3.3.3
       vite-plugin-node-polyfills: 0.25.0(rollup@4.62.2)(vite@5.4.21)
@@ -1698,45 +1705,51 @@ snapshots:
       - supports-color
       - vite
 
-  '@fluixi/dom@1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33)':
+  '@fluixi/dom@1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34)':
     dependencies:
-      '@fluixi/reactive': 1.0.0-alpha.33
+      '@fluixi/reactive': 1.0.0-alpha.34
       lit: 3.3.3
       stream: 0.0.3
       tslib: 2.8.1
 
-  '@fluixi/jsx@1.0.0-alpha.33(@fluixi/dom@1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33))(@fluixi/reactive@1.0.0-alpha.33)':
+  '@fluixi/head@0.1.0-alpha.1':
     dependencies:
-      '@fluixi/dom': 1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33)
-      '@fluixi/reactive': 1.0.0-alpha.33
+      '@fluixi/reactive': 1.0.0-alpha.34
+
+  '@fluixi/jsx@1.0.0-alpha.34(@fluixi/dom@1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34))(@fluixi/reactive@1.0.0-alpha.34)':
+    dependencies:
+      '@fluixi/dom': 1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34)
+      '@fluixi/reactive': 1.0.0-alpha.34
       lit: 3.3.3
       tslib: 2.8.1
 
-  '@fluixi/lit@1.0.0-alpha.33(@fluixi/dom@1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33))(@fluixi/reactive@1.0.0-alpha.33)':
+  '@fluixi/lit@1.0.0-alpha.34(@fluixi/dom@1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34))(@fluixi/reactive@1.0.0-alpha.34)':
     dependencies:
-      '@fluixi/dom': 1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33)
-      '@fluixi/reactive': 1.0.0-alpha.33
+      '@fluixi/dom': 1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34)
+      '@fluixi/reactive': 1.0.0-alpha.34
       lit: 3.3.3
       tslib: 2.8.1
 
-  '@fluixi/reactive@1.0.0-alpha.33':
+  '@fluixi/reactive@1.0.0-alpha.34':
     dependencies:
-      '@fluixi/utils': 1.0.0-alpha.33
+      '@fluixi/utils': 1.0.0-alpha.34
       tslib: 2.8.1
 
-  '@fluixi/router@0.1.1': {}
+  '@fluixi/router@0.1.2-alpha.0': {}
 
-  '@fluixi/server@1.0.0-alpha.33(@fluixi/dom@1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33))(@fluixi/reactive@1.0.0-alpha.33)':
+  '@fluixi/server@1.0.0-alpha.34(@fluixi/dom@1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34))(@fluixi/reactive@1.0.0-alpha.34)':
     dependencies:
-      '@fluixi/dom': 1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33)
-      '@fluixi/reactive': 1.0.0-alpha.33
+      '@fluixi/dom': 1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34)
+      '@fluixi/head': 0.1.0-alpha.1
+      '@fluixi/reactive': 1.0.0-alpha.34
 
-  '@fluixi/start@0.1.0-alpha.23(@fluixi/reactive@1.0.0-alpha.33)(rollup@4.62.2)(vite@5.4.21)':
+  '@fluixi/start@0.1.0-alpha.24(@fluixi/reactive@1.0.0-alpha.34)(rollup@4.62.2)(vite@5.4.21)':
     dependencies:
-      '@fluixi/compiler': 1.0.0-alpha.33
-      '@fluixi/core': 1.0.0-alpha.33(rollup@4.62.2)(vite@5.4.21)
-      '@fluixi/dom': 1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33)
-      '@fluixi/server': 1.0.0-alpha.33(@fluixi/dom@1.0.0-alpha.33(@fluixi/reactive@1.0.0-alpha.33))(@fluixi/reactive@1.0.0-alpha.33)
+      '@fluixi/compiler': 1.0.0-alpha.34
+      '@fluixi/core': 1.0.0-alpha.34(rollup@4.62.2)(vite@5.4.21)
+      '@fluixi/dom': 1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34)
+      '@fluixi/head': 0.1.0-alpha.1
+      '@fluixi/server': 1.0.0-alpha.34(@fluixi/dom@1.0.0-alpha.34(@fluixi/reactive@1.0.0-alpha.34))(@fluixi/reactive@1.0.0-alpha.34)
       esbuild: 0.27.7
       vite: 5.4.21
     transitivePeerDependencies:
@@ -1744,13 +1757,13 @@ snapshots:
       - rollup
       - supports-color
 
-  '@fluixi/utils@1.0.0-alpha.33':
+  '@fluixi/utils@1.0.0-alpha.34':
     dependencies:
       tslib: 2.8.1
 
-  '@fluixi/vite-plugin@1.0.0-alpha.33(vite@5.4.21)':
+  '@fluixi/vite-plugin@1.0.0-alpha.34(vite@5.4.21)':
     dependencies:
-      '@fluixi/compiler': 1.0.0-alpha.33
+      '@fluixi/compiler': 1.0.0-alpha.34
       tslib: 2.8.1
       vite: 5.4.21
     transitivePeerDependencies:
@@ -2324,7 +2337,7 @@ snapshots:
 
   md5.js@1.3.5:
     dependencies:
-      hash-base: 3.0.5
+      hash-base: 3.1.2
       inherits: 2.0.4
       safe-buffer: 5.2.1
 
