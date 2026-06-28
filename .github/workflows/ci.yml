@@ -1,0 +1,41 @@
+name: CI
+
+# Build check only — deployment is handled by Cloudflare Pages' dashboard Git integration
+# (auto-deploys dev.fluixi.com on every push to main). This just verifies the static build
+# still compiles, as an early signal before Cloudflare runs its own build.
+#
+# Requires one repo secret:
+#   NODE_AUTH_TOKEN — GitHub PAT with read:packages (installs the private @fluixi/* packages)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install
+        # pnpm v10 ignores the ${NODE_AUTH_TOKEN} placeholder in the committed project .npmrc
+        # (it won't expand env vars in repo-committed creds), so set it in user-level config.
+        run: |
+          pnpm config set "//npm.pkg.github.com/:_authToken" "${NODE_AUTH_TOKEN}"
+          pnpm install --frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+
+      - name: Build
+        run: pnpm build
