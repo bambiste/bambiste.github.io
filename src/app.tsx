@@ -10,7 +10,7 @@ function RootLayout() {
   );
 }
 
-const appRoutes = [{ path: '/', component: RootLayout, children: routes as any }];
+export const appRoutes = [{ path: '/', component: RootLayout, children: routes as any }];
 
 export default function App(props?: { url?: string }) {
   const history = typeof window === 'undefined' ? createMemoryHistory(props?.url ?? '/') : undefined;
