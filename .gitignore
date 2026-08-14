@@ -4,8 +4,6 @@ dist
 *.log
 .DS_Store
 
-# CVs: only the full-stack profile is published. The CTO and framework
-# profiles, and the PDF build script, stay local.
 cv/*
 !cv/cv-fullstack-engineer.en.md
 !cv/cv-fullstack-engineer.fr.md
