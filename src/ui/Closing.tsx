@@ -29,6 +29,9 @@ export default function Closing() {
             <a class="contact-handle" href={PROFILE.github} target="_blank" rel="noreferrer">
               github.com/Bambiste ↗
             </a>
+            <a class="contact-handle" href={PROFILE.linkedin} target="_blank" rel="noreferrer">
+              LinkedIn ↗
+            </a>
           </div>
           <code class="contact-email">{PROFILE.email}</code>
         </div>

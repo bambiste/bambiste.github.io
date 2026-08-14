@@ -9,7 +9,7 @@ import { initAmbient } from '../effects.js';
 import { PROFILE } from '../data.js';
 import { lang } from '../i18n.js';
 
-const SITE = 'https://dev.fluixi.com';
+const SITE = 'https://ibrahima.fluixi.com';
 const TITLE = 'Ibrahima Touré — Co-founder & CTO of Adafri';
 const DESC =
   'Co-founder & CTO of Adafri and full-stack engineer. I build platforms — and the foundations under them, including Fluixi, my own fine-grained reactive framework. This page runs on it.';
@@ -36,7 +36,7 @@ export default function Home() {
       name: PROFILE.name,
       url: SITE,
       jobTitle: 'Co-founder & CTO, Adafri',
-      sameAs: [PROFILE.github, 'https://adafri.co'],
+      sameAs: [PROFILE.github, PROFILE.linkedin, PROFILE.fluixi, 'https://adafri.co'],
     }),
   });
 

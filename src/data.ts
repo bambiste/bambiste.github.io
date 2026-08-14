@@ -2,9 +2,10 @@ import type { L } from './i18n.js';
 
 export const PROFILE = {
   name: 'Ibrahima Touré',
-  email: 'ibrahima.toure.dev@gmail.com',
+  email: 'ibrahima@fluixi.com',
   github: 'https://github.com/Bambiste',
   fluixi: 'https://github.com/fluixi',
+  linkedin: 'https://www.linkedin.com/in/ibrahima-toure-a31073184',
 };
 
 // ---------------------------------------------------------------------------
@@ -57,12 +58,12 @@ export const COPY = {
     fr: 'Depuis 2020, je suis co-fondateur et CTO d’Adafri — une plateforme marketing omnicanale pour les marchés africains (Google Ads, SMS, panneaux DOOH, Mobile Money). Un front Angular sur un backend Python/Flask et Cloud Firestore, avec Google Cloud Vision pour la détection de contenus interdits, de texte et de couleurs, et une intégration poussée de l’API Google Ads.',
   } as L,
   about2: {
-    en: 'I’ve written Python and Angular since 2018 — my third year of a bachelor’s degree — and I pick up tools by shipping with them: Flutter and React since 2021. I learn a framework by building something real in it.',
-    fr: 'J’écris du Python et de l’Angular depuis 2018 — ma troisième année de licence — et j’apprends les outils en livrant avec : Flutter et React depuis 2021. J’apprends un framework en construisant quelque chose de réel avec.',
+    en: 'I’ve written Python and Angular since 2018 — my third year of a bachelor’s degree — and I pick up tools by shipping with them: React since 2021, then Electron and React Native for Leuzma’s point-of-sale. I learn a framework by building something real in it.',
+    fr: 'J’écris du Python et de l’Angular depuis 2018 — ma troisième année de licence — et j’apprends les outils en livrant avec : React depuis 2021, puis Electron et React Native pour le point de vente de Leuzma. J’apprends un framework en construisant quelque chose de réel avec.',
   } as L,
   about3: {
-    en: 'That habit led me to build Fluixi — my own fine-grained reactive framework, with a TC39-signals core, a JSX compiler and full-stack rendering. It’s where I explore framework design from first principles; this page runs on it.',
-    fr: 'Cette habitude m’a mené à construire Fluixi — mon propre framework réactif à granularité fine, avec un cœur à signaux TC39, un compilateur JSX et un rendu full-stack. C’est là que j’explore la conception de frameworks à partir des principes ; cette page tourne dessus.',
+    en: 'That habit led me to build Fluixi — my own fine-grained reactive framework, with a TC39-signals core, a JSX compiler and full-stack rendering. It’s where I explore framework design from first principles, and it earns its keep: this page runs on it, and so does a point-of-sale system used every day in a client’s store.',
+    fr: 'Cette habitude m’a mené à construire Fluixi — mon propre framework réactif à granularité fine, avec un cœur à signaux TC39, un compilateur JSX et un rendu full-stack. C’est là que j’explore la conception de frameworks à partir des principes, et il fait ses preuves : cette page tourne dessus, tout comme un point de vente utilisé chaque jour dans la boutique d’un client.',
   } as L,
   about4: {
     en: 'I think long-term and build foundations, not just features — small dependency surfaces, honest abstractions, and software that does exactly what it says.',
@@ -122,8 +123,8 @@ export const PROJECTS: Project[] = [
     accent: 'phos',
     tags: ['Reactivity', 'Compiler', 'SSR/SSG', 'TypeScript'],
     blurb: {
-      en: 'A fine-grained reactive, compiled full-stack web framework on a TC39-signals core — SSR, streaming, SSG, file routing, server functions, islands, dependency injection and i18n. The framework this site runs on.',
-      fr: 'Un framework web full-stack réactif et compilé, sur un cœur à signaux TC39 — SSR, streaming, SSG, routage par fichiers, fonctions serveur, islands, injection de dépendances et i18n. Le framework qui propulse ce site.',
+      en: 'A fine-grained reactive, compiled full-stack web framework on a TC39-signals core — SSR, streaming, SSG, file routing, server functions, islands, dependency injection and i18n. 21 packages on npm. It runs this site, the Leuzma storefront and admin, and a point-of-sale system in production in a client’s store.',
+      fr: 'Un framework web full-stack réactif et compilé, sur un cœur à signaux TC39 — SSR, streaming, SSG, routage par fichiers, fonctions serveur, islands, injection de dépendances et i18n. 21 paquets publiés sur npm. Il propulse ce site, la boutique et le back-office Leuzma, et un point de vente en production dans la boutique d’un client.',
     },
     links: [
       { label: 'Docs', href: 'https://docs.fluixi.com' },
@@ -134,12 +135,12 @@ export const PROJECTS: Project[] = [
     id: 'leuzma',
     name: 'Leuzma',
     kind: { en: 'Commerce platform', fr: 'Plateforme e-commerce' },
-    year: '2024 —',
+    year: '2026 —',
     accent: 'amber',
-    tags: ['Full-stack', 'Commerce', 'Medusa', 'TypeScript'],
+    tags: ['Commerce', 'Fluixi', 'Medusa', 'Electron', 'React Native'],
     blurb: {
-      en: 'A full-stack commerce platform — a Medusa backend, a storefront and an admin dashboard — built as a multi-package monorepo for real-world retail, with i18n and a typed data layer throughout.',
-      fr: 'Une plateforme e-commerce full-stack — un backend Medusa, une boutique et un tableau de bord d’administration — construite en monorepo multi-paquets pour le commerce réel, avec i18n et une couche de données typée de bout en bout.',
+      en: 'A commerce platform spanning online and physical retail — a Medusa backend with a storefront and admin dashboard built on Fluixi, a desktop POS in Fluixi + Electron that runs daily in a client’s store, and a React Native POS for mobile. A multi-package monorepo with i18n and a typed data layer throughout.',
+      fr: 'Une plateforme e-commerce du web à la boutique physique — un backend Medusa avec une boutique et un back-office construits sur Fluixi, un POS desktop en Fluixi + Electron utilisé chaque jour dans la boutique d’un client, et un POS mobile en React Native. Un monorepo multi-paquets, avec i18n et une couche de données typée de bout en bout.',
     },
     links: [],
   },
@@ -181,7 +182,7 @@ export const STACK: StackGroup[] = [
     id: 'languages',
     glyph: '◆',
     label: { en: 'Languages & frameworks', fr: 'Langages & frameworks' },
-    items: ['Python', 'TypeScript', 'Angular', 'React', 'Flutter'],
+    items: ['Python', 'TypeScript', 'Angular', 'React', 'React Native', 'Electron', 'Flutter'],
   },
   {
     id: 'backend',

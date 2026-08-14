@@ -1,7 +1,7 @@
 name: CI
 
 # Build check only — deployment is handled by Cloudflare Pages' dashboard Git integration
-# (auto-deploys dev.fluixi.com on every push to main). This just verifies the static build
+# (auto-deploys ibrahima.fluixi.com on every push to main). This just verifies the static build
 # still compiles, as an early signal before Cloudflare runs its own build.
 #
 # Requires one repo secret:
