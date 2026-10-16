@@ -11,5 +11,5 @@
     "lib": ["ES2021", "DOM", "DOM.Iterable"],
     "types": ["node", "vite/client"]
   },
-  "include": ["src"]
+  "include": ["src", "fluixi.d.ts", "fluixi.config.ts", "site.config.json"]
 }

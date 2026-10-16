@@ -3,83 +3,76 @@ import type { L } from './i18n.js';
 export const PROFILE = {
   name: 'Ibrahima Touré',
   email: 'ibrahima@fluixi.com',
-  github: 'https://github.com/Bambiste',
+  github: 'https://github.com/bambiste',
   fluixi: 'https://github.com/fluixi',
   linkedin: 'https://www.linkedin.com/in/ibrahima-toure-a31073184',
 };
 
 // ---------------------------------------------------------------------------
-// Chrome / narrative copy (bilingual)
+// Page copy (bilingual)
 // ---------------------------------------------------------------------------
 export const COPY = {
   status: { en: 'Open to work', fr: 'Disponible' } as L,
 
   nav: {
-    work: { en: 'Work', fr: 'Travaux' } as L,
-    stack: { en: 'Stack', fr: 'Stack' } as L,
+    work: { en: 'Work', fr: 'Projets' } as L,
+    oss: { en: 'Open source', fr: 'Open source' } as L,
     about: { en: 'About', fr: 'À propos' } as L,
     contact: { en: 'Contact', fr: 'Contact' } as L,
   },
+  langToggle: { en: 'Afficher la page en français', fr: 'Show the page in English' } as L,
 
-  heroEyebrow: {
-    en: 'Co-founder & CTO · Adafri · since 2020',
-    fr: 'Co-fondateur & CTO · Adafri · depuis 2020',
+  heroSlogan: { en: 'Engineered from first principles', fr: 'Conçu à partir des principes premiers' } as L,
+  heroWho: {
+    en: 'Software engineer · Dakar, Senegal',
+    fr: 'Ingénieur logiciel · Dakar, Sénégal',
   } as L,
-  heroNow: {
-    en: 'Currently building Adafri — an AI-powered, omnichannel marketing platform for African markets.',
-    fr: 'Je construis Adafri — une plateforme marketing omnicanale, dopée à l’IA, pour les marchés africains.',
+  heroNow: { en: 'Now', fr: 'Aujourd’hui' } as L,
+  heroRoleFluixi: { en: 'Author of Fluixi', fr: 'Auteur de Fluixi' } as L,
+  heroRoleAdafri: { en: 'Co-founder & CTO, Adafri', fr: 'Co-fondateur & CTO, Adafri' } as L,
+  heroLedeA: { en: 'I build platforms, ', fr: 'Je construis des plateformes, ' } as L,
+  heroLedeB: { en: 'down to the foundations', fr: 'jusqu’aux fondations' } as L,
+  heroLedeC: {
+    en: ': products people use every day, and the framework and tools they run on.',
+    fr: ' : des produits utilisés au quotidien, et le framework et les outils sur lesquels ils tournent.',
   } as L,
-  heroTitleA: { en: 'I build platforms —', fr: 'Je construis des plateformes —' } as L,
-  heroTitleB: { en: 'down to the foundations.', fr: 'jusqu’aux fondations.' } as L,
-  heroLede: {
-    en: 'Full-stack engineer and co-founder/CTO of Adafri — an omnichannel marketing platform built with Angular and Python. On the side I build Fluixi, my own fine-grained reactive framework: this very page runs on it, prerendered to static HTML and hydrated into the live instrument on the right.',
-    fr: 'Ingénieur full-stack, co-fondateur et CTO d’Adafri — une plateforme marketing omnicanale construite avec Angular et Python. En parallèle je développe Fluixi, mon propre framework réactif à granularité fine : cette page tourne dessus, prérendue en HTML statique puis hydratée dans l’instrument vivant ci-contre.',
-  } as L,
-  ctaWork: { en: 'See selected work', fr: 'Voir les projets' } as L,
-  ctaContact: { en: 'Get in touch', fr: 'Me contacter' } as L,
+  ctaWork: { en: 'Selected work', fr: 'Projets choisis' } as L,
 
-  // section eyebrows
-  secWork: { en: 'Selected work', fr: 'Projets sélectionnés' } as L,
+  secWork: { en: 'Selected work', fr: 'Projets choisis' } as L,
   secWorkSub: {
-    en: 'A few systems I designed and built end to end.',
-    fr: 'Quelques systèmes conçus et construits de bout en bout.',
+    en: 'Systems I designed and built end to end, from the data layer to the screen.',
+    fr: 'Des systèmes conçus et construits de bout en bout, de la couche de données à l’écran.',
   } as L,
-  filterAll: { en: 'All', fr: 'Tous' } as L,
 
-  secStack: { en: 'Capabilities', fr: 'Compétences' } as L,
-  secStackSub: {
-    en: 'What I reach for, grouped by the layer it lives in.',
-    fr: 'Mes outils, regroupés par couche.',
+  secOss: { en: 'Open source', fr: 'Open source' } as L,
+  secOssSub: {
+    en: 'Small tools that came out of real projects, each published on npm.',
+    fr: 'De petits outils nés de vrais projets, tous publiés sur npm.',
   } as L,
 
   secAbout: { en: 'About', fr: 'À propos' } as L,
   about1: {
-    en: 'Since 2020 I’ve been co-founder and CTO of Adafri — an omnichannel marketing platform for African markets (Google Ads, SMS, DOOH billboards, Mobile Money). It’s an Angular front end on a Python/Flask backend over Cloud Firestore, with Google Cloud Vision handling prohibited-content, text and color detection, and deep Google Ads API integration.',
-    fr: 'Depuis 2020, je suis co-fondateur et CTO d’Adafri — une plateforme marketing omnicanale pour les marchés africains (Google Ads, SMS, panneaux DOOH, Mobile Money). Un front Angular sur un backend Python/Flask et Cloud Firestore, avec Google Cloud Vision pour la détection de contenus interdits, de texte et de couleurs, et une intégration poussée de l’API Google Ads.',
+    en: 'I’ve written Python and Angular since 2018, and I learn tools by shipping with them: React since 2021, then Electron and React Native for point-of-sale work.',
+    fr: 'J’écris du Python et de l’Angular depuis 2018, et j’apprends les outils en livrant avec : React depuis 2021, puis Electron et React Native pour des logiciels de caisse.',
   } as L,
   about2: {
-    en: 'I’ve written Python and Angular since 2018 — my third year of a bachelor’s degree — and I pick up tools by shipping with them: React since 2021, then Electron and React Native for Leuzma’s point-of-sale. I learn a framework by building something real in it.',
-    fr: 'J’écris du Python et de l’Angular depuis 2018 — ma troisième année de licence — et j’apprends les outils en livrant avec : React depuis 2021, puis Electron et React Native pour le point de vente de Leuzma. J’apprends un framework en construisant quelque chose de réel avec.',
+    en: 'That habit led me to build Fluixi, where I explore framework design from first principles. It runs this page and a point-of-sale system used every day in a store.',
+    fr: 'Cette habitude m’a mené à construire Fluixi, où j’explore la conception de frameworks à partir des principes. Il fait tourner cette page et un logiciel de caisse utilisé chaque jour en boutique.',
   } as L,
   about3: {
-    en: 'That habit led me to build Fluixi — my own fine-grained reactive framework, with a TC39-signals core, a JSX compiler and full-stack rendering. It’s where I explore framework design from first principles, and it earns its keep: this page runs on it, and so does a point-of-sale system used every day in a client’s store.',
-    fr: 'Cette habitude m’a mené à construire Fluixi — mon propre framework réactif à granularité fine, avec un cœur à signaux TC39, un compilateur JSX et un rendu full-stack. C’est là que j’explore la conception de frameworks à partir des principes, et il fait ses preuves : cette page tourne dessus, tout comme un point de vente utilisé chaque jour dans la boutique d’un client.',
-  } as L,
-  about4: {
-    en: 'I think long-term and build foundations, not just features — small dependency surfaces, honest abstractions, and software that does exactly what it says.',
-    fr: 'Je pense à long terme et je construis des fondations, pas seulement des fonctionnalités — des surfaces de dépendances réduites, des abstractions honnêtes, et des logiciels qui font exactement ce qu’ils annoncent.',
+    en: 'I think long-term: small dependency surfaces, honest abstractions, and software that does exactly what it says.',
+    fr: 'Je pense à long terme : peu de dépendances, des abstractions honnêtes, et des logiciels qui font exactement ce qu’ils annoncent.',
   } as L,
 
   secContact: { en: 'Contact', fr: 'Contact' } as L,
-  contactLede: {
-    en: 'Have something that needs to be fast, reactive, and built to last? Let’s talk.',
-    fr: 'Un projet qui doit être rapide, réactif et durable ? Parlons-en.',
-  } as L,
-  contactEmail: { en: 'Email me', fr: 'M’écrire' } as L,
+  contactTitleA: { en: 'Something that needs to ', fr: 'Un projet qui doit ' } as L,
+  contactTitleB: { en: 'last?', fr: 'durer ?' } as L,
+  copyEmail: { en: 'Copy email', fr: 'Copier l’email' } as L,
+  copied: { en: 'Copied', fr: 'Copié' } as L,
 
   footNote: {
-    en: 'Designed & built by Ibrahima Touré — running on Fluixi, prerendered to static HTML, hydrated into a live signal graph.',
-    fr: 'Conçu et développé par Ibrahima Touré — propulsé par Fluixi, prérendu en HTML statique, hydraté en graphe de signaux vivant.',
+    en: 'Built with Fluixi, prerendered and hydrated.',
+    fr: 'Construit avec Fluixi, prérendu puis hydraté.',
   } as L,
 };
 
@@ -88,43 +81,43 @@ export const COPY = {
 // ---------------------------------------------------------------------------
 export type Project = {
   id: string;
-  name: string;
-  kind: L;
-  year: string;
-  accent: 'cyan' | 'amber' | 'violet' | 'phos';
+  name: L;
+  role: L;
+  when: L;
   tags: string[];
   blurb: L;
   links: { label: string; href: string }[];
+  facts?: { label: L; value: L }[];
   featured?: boolean;
-  role?: L;
 };
 
 export const PROJECTS: Project[] = [
   {
     id: 'adafri',
-    name: 'Adafri',
-    kind: { en: 'Marketing & advertising platform', fr: 'Plateforme marketing & publicité' },
-    role: { en: 'Co-founder & CTO · since 2020', fr: 'Co-fondateur & CTO · depuis 2020' },
-    year: '2020 —',
-    accent: 'phos',
+    name: { en: 'Adafri', fr: 'Adafri' },
+    role: { en: 'Co-founder & CTO', fr: 'Co-fondateur & CTO' },
+    when: { en: 'Since 2020', fr: 'Depuis 2020' },
     featured: true,
-    tags: ['Angular', 'Python · Flask', 'Firestore', 'Cloud Vision', 'Google Ads'],
+    tags: ['Angular', 'Python · Flask', 'Firestore', 'Cloud Vision', 'Google Ads API'],
     blurb: {
-      en: 'The platform I lead as co-founder and CTO. Adafri lets businesses create, manage and automate advertising across channels — Google Ads, SMS, DOOH billboards and Mobile Money payments — for African markets. An Angular front end on a Python/Flask backend over Cloud Firestore, with Google Cloud Vision for prohibited-content, text and color detection, and deep Google Ads API integration. Now growing into an AI-powered marketing suite with built-in business tools.',
-      fr: 'La plateforme que je dirige en tant que co-fondateur et CTO. Adafri permet aux entreprises de créer, gérer et automatiser leur publicité sur tous les canaux — Google Ads, SMS, panneaux DOOH et paiements Mobile Money — pour les marchés africains. Un front Angular sur un backend Python/Flask et Cloud Firestore, avec Google Cloud Vision pour la détection de contenus interdits, de texte et de couleurs, et une intégration poussée de l’API Google Ads. En route vers une suite marketing dopée à l’IA, avec des outils métier intégrés.',
+      en: 'Let businesses create, manage and automate advertising across Google Ads, SMS, DOOH billboards and Mobile Money payments, for African markets. I led the technology: an Angular front end on a Python/Flask backend over Cloud Firestore, with Google Cloud Vision for content checks and deep Google Ads API integration.',
+      fr: 'Permettait aux entreprises de créer, gérer et automatiser leur publicité sur Google Ads, SMS, panneaux DOOH et paiements Mobile Money, pour les marchés africains. J’en ai dirigé la technique : un front Angular sur un backend Python/Flask et Cloud Firestore, avec Google Cloud Vision pour la vérification des contenus et une intégration poussée de l’API Google Ads.',
     },
+    facts: [
+      { label: { en: 'Channels', fr: 'Canaux' }, value: { en: 'Ads, SMS, DOOH, Mobile Money', fr: 'Ads, SMS, DOOH, Mobile Money' } },
+      { label: { en: 'Market', fr: 'Marché' }, value: { en: 'West Africa', fr: 'Afrique de l’Ouest' } },
+    ],
     links: [{ label: 'adafri.co', href: 'https://adafri.co' }],
   },
   {
     id: 'fluixi',
-    name: 'Fluixi',
-    kind: { en: 'Reactive framework', fr: 'Framework réactif' },
-    year: '2025 —',
-    accent: 'phos',
-    tags: ['Reactivity', 'Compiler', 'SSR/SSG', 'TypeScript'],
+    name: { en: 'Fluixi', fr: 'Fluixi' },
+    role: { en: 'Author', fr: 'Auteur' },
+    when: { en: 'Since 2025', fr: 'Depuis 2025' },
+    tags: ['Signals', 'Compiler', 'SSR · SSG', 'TypeScript'],
     blurb: {
-      en: 'A fine-grained reactive, compiled full-stack web framework on a TC39-signals core — SSR, streaming, SSG, file routing, server functions, islands, dependency injection and i18n. 21 packages on npm. It runs this site, the Leuzma storefront and admin, and a point-of-sale system in production in a client’s store.',
-      fr: 'Un framework web full-stack réactif et compilé, sur un cœur à signaux TC39 — SSR, streaming, SSG, routage par fichiers, fonctions serveur, islands, injection de dépendances et i18n. 21 paquets publiés sur npm. Il propulse ce site, la boutique et le back-office Leuzma, et un point de vente en production dans la boutique d’un client.',
+      en: 'A fine-grained reactive, compiled full-stack framework on a TC39-signals core: SSR, streaming, SSG, file routing, server functions, islands and i18n. Published on npm and running in production.',
+      fr: 'Un framework full-stack réactif et compilé, sur un cœur à signaux TC39 : SSR, streaming, SSG, routage par fichiers, fonctions serveur, islands et i18n. Publié sur npm et utilisé en production.',
     },
     links: [
       { label: 'Docs', href: 'https://docs.fluixi.com' },
@@ -132,74 +125,146 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    id: 'leuzma',
-    name: 'Leuzma',
-    kind: { en: 'Commerce platform', fr: 'Plateforme e-commerce' },
-    year: '2026 —',
-    accent: 'amber',
-    tags: ['Commerce', 'Fluixi', 'Medusa', 'Electron', 'React Native'],
+    id: 'commerce',
+    name: { en: 'Commerce & point of sale', fr: 'Commerce & point de vente' },
+    role: { en: 'Freelance', fr: 'Freelance' },
+    when: { en: '2026', fr: '2026' },
+    tags: ['Medusa', 'Fluixi', 'Electron', 'React Native'],
     blurb: {
-      en: 'A commerce platform spanning online and physical retail — a Medusa backend with a storefront and admin dashboard built on Fluixi, a desktop POS in Fluixi + Electron that runs daily in a client’s store, and a React Native POS for mobile. A multi-package monorepo with i18n and a typed data layer throughout.',
-      fr: 'Une plateforme e-commerce du web à la boutique physique — un backend Medusa avec une boutique et un back-office construits sur Fluixi, un POS desktop en Fluixi + Electron utilisé chaque jour dans la boutique d’un client, et un POS mobile en React Native. Un monorepo multi-paquets, avec i18n et une couche de données typée de bout en bout.',
+      en: 'A Medusa commerce stack spanning online and in-store retail: storefront and admin on Fluixi, a desktop POS in Fluixi and Electron, and a React Native POS for mobile. Used daily by Leuzma, a retail business.',
+      fr: 'Une stack e-commerce Medusa, du web à la boutique : vitrine et back-office sur Fluixi, un logiciel de caisse desktop en Fluixi et Electron, et une caisse mobile en React Native. Utilisée chaque jour par Leuzma, une entreprise de commerce.',
     },
     links: [],
   },
   {
     id: 'devtools',
-    name: 'Fluixi Devtools',
-    kind: { en: 'Developer tooling', fr: 'Outillage développeur' },
-    year: '2025',
-    accent: 'cyan',
+    name: { en: 'Fluixi Devtools', fr: 'Fluixi Devtools' },
+    role: { en: 'Tooling', fr: 'Outillage' },
+    when: { en: '2025', fr: '2025' },
     tags: ['Tooling', 'Reactivity', 'SVG'],
     blurb: {
-      en: 'A live dependency-graph inspector for Fluixi — it instruments signals, memos, stores and effects and renders the reactive graph as it propagates, so you can watch state flow in real time.',
-      fr: 'Un inspecteur de graphe de dépendances en direct pour Fluixi — il instrumente signaux, mémos, stores et effets et dessine le graphe réactif au fil de la propagation, pour voir l’état circuler en temps réel.',
+      en: 'A live dependency-graph inspector. It instruments signals, memos, stores and effects and draws the graph as updates propagate, so you can watch state flow in real time.',
+      fr: 'Un inspecteur de graphe de dépendances en direct. Il instrumente signaux, mémos, stores et effets et dessine le graphe au fil des mises à jour, pour voir l’état circuler en temps réel.',
     },
     links: [{ label: 'Playground', href: 'https://playground.fluixi.com' }],
   },
   {
     id: 'countries',
-    name: 'Bambiste Countries',
-    kind: { en: 'Open-data package', fr: 'Paquet de données ouvertes' },
-    year: '2025',
-    accent: 'violet',
-    tags: ['Data', 'Zero-dep', 'Codegen'],
+    name: { en: 'Countries', fr: 'Countries' },
+    role: { en: 'Open data', fr: 'Données ouvertes' },
+    when: { en: '2025', fr: '2025' },
+    tags: ['Data', 'Web components', 'Zero runtime deps'],
     blurb: {
-      en: 'A zero-dependency country dataset and helpers, generated from world-countries — names, currencies, calling codes and flags, fully typed. Built to drop the need for a paid geo API.',
-      fr: 'Un jeu de données pays sans dépendances et ses utilitaires, générés depuis world-countries — noms, devises, indicatifs et drapeaux, entièrement typés. Conçu pour se passer d’une API géo payante.',
+      en: 'Countries as static data, with what a form needs around them: calling codes, names in any language, search, phone numbers, a country select and a phone input.',
+      fr: 'Les pays en données statiques, avec ce qu’un formulaire demande autour : indicatifs, noms dans toutes les langues, recherche, numéros de téléphone, un sélecteur de pays et un champ téléphone.',
     },
-    links: [],
+    links: [{ label: 'GitHub', href: 'https://github.com/bambiste/countries' }],
+  },
+];
+
+// ---------------------------------------------------------------------------
+// Open source
+// ---------------------------------------------------------------------------
+export type Package = { name: string; pkg: string; href: string; blurb: L };
+
+export const OPEN_SOURCE: Package[] = [
+  {
+    name: 'mix-builder',
+    pkg: '@bambiste/mix-builder',
+    href: 'https://github.com/bambiste/mix-builder',
+    blurb: {
+      en: 'A fast esbuild and Rollup library bundler with multi-format output, CDN globals and per-file gzip size reports.',
+      fr: 'Un bundler de bibliothèques rapide, sur esbuild et Rollup : sortie multi-format, globales CDN et taille gzip par fichier.',
+    },
+  },
+  {
+    name: 'mappel',
+    pkg: 'mappel',
+    href: 'https://github.com/bambiste/mappel',
+    blurb: {
+      en: 'Generates the import map a page needs from a workspace, resolving every transitive subpath through each package’s exports.',
+      fr: 'Génère l’import map dont une page a besoin à partir d’un workspace, en résolvant chaque sous-chemin via les exports de chaque paquet.',
+    },
+  },
+  {
+    name: 'mix-env',
+    pkg: '@bambiste/mix-env',
+    href: 'https://github.com/bambiste/mix-builder/tree/main/packages/mix-env',
+    blurb: {
+      en: 'Syncs .env files with GitHub Actions secrets across a monorepo, then writes them back into files locally, in CI or on a VPS.',
+      fr: 'Synchronise les fichiers .env avec les secrets GitHub Actions d’un monorepo, puis les réécrit en fichiers en local, en CI ou sur un VPS.',
+    },
+  },
+  {
+    name: 'Medusa plugins',
+    pkg: '@bambiste/medusa-*',
+    href: 'https://github.com/bambiste/medusa-plugins',
+    blurb: {
+      en: 'Plugins for MedusaJS v2: barcode lookup, Odoo sync, QR codes, product extensions, social commerce and stories.',
+      fr: 'Des plugins pour MedusaJS v2 : codes-barres, synchronisation Odoo, QR codes, extensions produit, social commerce et stories.',
+    },
   },
 ];
 
 // ---------------------------------------------------------------------------
 // Capabilities
 // ---------------------------------------------------------------------------
-export type StackGroup = { id: string; label: L; glyph: string; items: string[] };
+export type Capability = { id: string; label: L; items: string };
 
-export const STACK: StackGroup[] = [
+export const CAPABILITIES: Capability[] = [
   {
-    id: 'languages',
-    glyph: '◆',
-    label: { en: 'Languages & frameworks', fr: 'Langages & frameworks' },
-    items: ['Python', 'TypeScript', 'Angular', 'React', 'React Native', 'Electron', 'Flutter'],
+    id: 'frameworks',
+    label: { en: 'Frameworks & reactivity', fr: 'Frameworks & réactivité' },
+    items: 'TC39 signals, JSX to DOM compilation, SSR, SSG, hydration',
   },
   {
-    id: 'backend',
-    glyph: 'ƒ',
-    label: { en: 'Backend & cloud', fr: 'Backend & cloud' },
-    items: ['Python · Flask', 'Cloud Firestore', 'Google Cloud Vision', 'Google Ads API', 'REST APIs'],
+    id: 'product',
+    label: { en: 'Product engineering', fr: 'Développement produit' },
+    items: 'TypeScript, Angular, React, React Native, Electron, Python, Flask',
   },
   {
-    id: 'reactivity',
-    glyph: '▤',
-    label: { en: 'Reactivity & frameworks', fr: 'Réactivité & frameworks' },
-    items: ['TC39 Signals', 'JSX → DOM compiler', 'SSR · SSG', 'Fine-grained rendering', 'Hydration'],
+    id: 'cloud',
+    label: { en: 'Platform & cloud', fr: 'Plateforme & cloud' },
+    items: 'Google Cloud, Firestore, Cloud Vision, Google Ads API, Cloudflare',
   },
   {
-    id: 'foundations',
-    glyph: '⟂',
-    label: { en: 'Craft & foundations', fr: 'Méthode & fondations' },
-    items: ['Monorepos · pnpm/nx', 'CI · changesets', 'Vitest', 'GDPR · privacy', 'Design systems'],
+    id: 'tooling',
+    label: { en: 'Tooling', fr: 'Outillage' },
+    items: 'pnpm and Nx monorepos, changesets, Vitest, bundlers, import maps',
   },
 ];
+
+// ---------------------------------------------------------------------------
+// Search: titles, descriptions and structured data per language
+// ---------------------------------------------------------------------------
+export const SEO = {
+  title: {
+    en: 'Ibrahima Touré, Software Engineer in Dakar, Senegal',
+    fr: 'Ibrahima Touré, Ingénieur logiciel à Dakar, Sénégal',
+  } as L,
+  description: {
+    en: 'Full-stack software engineer and web developer based in Dakar, Senegal. Co-founder & CTO of Adafri and author of Fluixi, a reactive JavaScript framework. Open to remote and international roles.',
+    fr: 'Ingénieur logiciel et développeur web full-stack basé à Dakar, au Sénégal. Co-fondateur & CTO d’Adafri et auteur de Fluixi, un framework JavaScript réactif. Ouvert au télétravail et aux missions internationales.',
+  } as L,
+  keywords: {
+    en: 'software engineer Dakar, web developer Senegal, full-stack developer Dakar, TypeScript, JavaScript framework, Fluixi, Ibrahima Touré',
+    fr: 'ingénieur logiciel Dakar, développeur web Sénégal, développeur full-stack Dakar, TypeScript, framework JavaScript, Fluixi, Ibrahima Touré',
+  } as L,
+  jobTitle: {
+    en: 'Full-stack Software Engineer',
+    fr: 'Ingénieur logiciel full-stack',
+  } as L,
+  knowsAbout: [
+    'Software engineering',
+    'Web development',
+    'TypeScript',
+    'JavaScript',
+    'Python',
+    'Angular',
+    'React',
+    'Server-side rendering',
+    'Reactive programming',
+    'Developer tooling',
+    'MedusaJS',
+  ],
+};
