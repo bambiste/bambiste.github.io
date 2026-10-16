@@ -30,6 +30,7 @@ export default function Page(props: { lang: Lang }) {
     author: PROFILE.name,
     themeColor: '#0e0d0c',
     robots: { index: true, follow: true, maxImagePreview: 'large' },
+    verification: { google: 'rNOSH-uacV9qEW3kSRkJdlrs_PvFFINtF0y7kJdF7Xc' },
     alternates: [
       { hreflang: 'en', href: SITE + PATHS.en },
       { hreflang: 'fr', href: SITE + PATHS.fr },
