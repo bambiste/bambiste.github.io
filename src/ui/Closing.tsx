@@ -31,7 +31,7 @@ export default function Closing() {
             <div class="caps" data-reveal>
               {CAPABILITIES.map((c) => (
                 <div class="cap">
-                  <h4>{() => t(c.label)}</h4>
+                  <h3>{() => t(c.label)}</h3>
                   <p>{c.items}</p>
                 </div>
               ))}

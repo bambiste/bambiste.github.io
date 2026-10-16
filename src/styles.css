@@ -1,5 +1,20 @@
 /* Dark studio: warm charcoal, warm off-white type, one amber accent used sparingly.
    Layout: a full-width particle name, then a 12-track grid for every section. */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-stretch: 75% 100%;
+  font-display: swap;
+  src: url('/fonts/instrument-sans-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url('/fonts/geist-mono-latin.woff2') format('woff2');
+}
 :root {
   --ground: #0e0d0c;
   --surface: #171513;
@@ -445,7 +460,7 @@ a {
   gap: 24px;
   align-content: start;
 }
-.cap h4 {
+.cap h3 {
   margin: 0 0 6px;
   font-size: 15px;
   font-weight: 600;
@@ -527,11 +542,10 @@ a {
 
 /* scroll reveal: only sections below the fold get .pending, so the page reads at rest */
 [data-reveal] {
-  transition: transform 1s cubic-bezier(0.2, 0.7, 0.1, 1), opacity 1s;
+  transition: transform 1s cubic-bezier(0.2, 0.7, 0.1, 1);
 }
 [data-reveal].pending {
   transform: translateY(28px);
-  opacity: 0.3;
 }
 
 @media (max-width: 900px) {
