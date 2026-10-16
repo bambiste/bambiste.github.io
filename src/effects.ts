@@ -1,40 +1,50 @@
-// Client-only ambience, wired from the page's onMount. A pointer-tracked spotlight (written to a
-// CSS variable, so the paint stays on the GPU) and a scroll-reveal observer for `[data-reveal]`.
+// Client-only page motion, wired from the page's onMount: sections below the fold ease in as they
+// scroll into view (content is readable at rest), and cards tilt with a light under the pointer.
 export function initAmbient(): () => void {
-  if (typeof document === 'undefined') return () => {};
-  const root = document.documentElement;
-  let raf = 0;
-  let tx = 0;
-  let ty = 0;
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const cleanups: (() => void)[] = [];
 
-  const onMove = (e: PointerEvent) => {
-    tx = e.clientX;
-    ty = e.clientY;
-    if (!raf)
-      raf = requestAnimationFrame(() => {
-        raf = 0;
-        root.style.setProperty('--mx', tx + 'px');
-        root.style.setProperty('--my', ty + 'px');
-      });
-  };
-  window.addEventListener('pointermove', onMove, { passive: true });
-
-  const io = new IntersectionObserver(
-    (entries) => {
-      for (const en of entries) {
-        if (en.isIntersecting) {
-          en.target.classList.add('in');
-          io.unobserve(en.target);
+  if (!reduce) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const en of entries) {
+          if (en.isIntersecting) {
+            en.target.classList.remove('pending');
+            io.unobserve(en.target);
+          }
         }
+      },
+      { rootMargin: '0px 0px -8% 0px' },
+    );
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      if (el.getBoundingClientRect().top > window.innerHeight) {
+        el.classList.add('pending');
+        io.observe(el);
       }
-    },
-    { rootMargin: '0px 0px -10% 0px', threshold: 0.12 },
-  );
-  document.querySelectorAll('[data-reveal]').forEach((el) => io.observe(el));
+    });
+    cleanups.push(() => io.disconnect());
+  }
 
-  return () => {
-    window.removeEventListener('pointermove', onMove);
-    if (raf) cancelAnimationFrame(raf);
-    io.disconnect();
-  };
+  document.querySelectorAll<HTMLElement>('[data-tilt]').forEach((card) => {
+    const move = (e: PointerEvent) => {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width;
+      const y = (e.clientY - r.top) / r.height;
+      card.style.setProperty('--x', x * 100 + '%');
+      card.style.setProperty('--y', y * 100 + '%');
+      if (!reduce)
+        card.style.transform = `perspective(1000px) rotateX(${(0.5 - y) * 4}deg) rotateY(${(x - 0.5) * 5}deg)`;
+    };
+    const leave = () => {
+      card.style.transform = '';
+    };
+    card.addEventListener('pointermove', move);
+    card.addEventListener('pointerleave', leave);
+    cleanups.push(() => {
+      card.removeEventListener('pointermove', move);
+      card.removeEventListener('pointerleave', leave);
+    });
+  });
+
+  return () => cleanups.forEach((fn) => fn());
 }

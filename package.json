@@ -4,23 +4,27 @@
   "type": "module",
   "scripts": {
     "dev": "fluixi dev",
-    "build": "node build.mjs",
+    "build": "fluixi build && node scripts/seo-files.mjs",
     "start": "fluixi start",
     "preview": "vite preview --outDir dist/client"
   },
   "dependencies": {
-    "@fluixi/cli": "0.1.0-alpha.27",
-    "@fluixi/core": "1.0.0-alpha.36",
-    "@fluixi/dom": "1.0.0-alpha.36",
-    "@fluixi/jsx": "1.0.0-alpha.36",
-    "@fluixi/reactive": "1.0.0-alpha.36",
-    "@fluixi/server": "1.0.0-alpha.36",
-    "@fluixi/start": "0.1.0-alpha.26",
-    "@fluixi/head": "0.1.0-alpha.3"
+    "@fluixi/cli": "1.0.0-alpha.99",
+    "@fluixi/core": "1.0.0-alpha.99",
+    "@fluixi/dom": "1.0.0-alpha.99",
+    "@fluixi/head": "1.0.0-alpha.99",
+    "@fluixi/jsx": "1.0.0-alpha.99",
+    "@fluixi/reactive": "1.0.0-alpha.99",
+    "@fluixi/router": "1.0.0-alpha.99",
+    "@fluixi/server": "1.0.0-alpha.99",
+    "@fluixi/start": "1.0.0-alpha.99",
+    "three": "0.128.0"
   },
   "devDependencies": {
-    "typescript": "^5.4.0",
-    "vite": "^5.0.0"
+    "@types/node": "^20.0.0",
+    "@types/three": "0.128.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
